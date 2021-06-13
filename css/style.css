@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.container_full{
+    width: 100%;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.logo img{
+    height: 40px;
+}
+
+.logo p{
+    font-size: 25px;
+    color: rgb(252, 138, 62);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav-bg{
+    background: #fff;
+    box-shadow: 0 1px 30px rgba(128, 128, 128, 0.253);
+    position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a{
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+nav ul li:hover a{
+    color: rgb(252, 138, 62);
+}
+
+nav ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgb(252, 138, 62);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+nav ul li a:hover::after{
+    width: 90%;
+}
+
+nav button{
+    background-color: #fff;
+    border: none;
+    color: rgb(252, 138, 62);
+    font-size: 20px;
+}
+
+/* Banner */
+
+.banner-area{
+    margin-top: 50px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.banner h1{
+    color: #333;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 40px 0 20px 0;
+}
+
+.orange-highlight{
+    color: rgb(252, 138, 62);
+}
+
+.banner p{
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.banner img{
+    width: 80%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Project Text */
+
+.red-highlight{
+    color: rgb(252, 138, 62);
+}
+
+.half-width{
+    width: 40%;
+}
+
+.project_text{
+    margin: 80px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.project_text .right_justified{
+    text-align: right;
+    margin: 0 20px;
+}
+
+.project_text .left_justified{
+    text-align: left;
+    margin: 0 20px;
+}
+
+.project_text h2{
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+/* Projects */
+
+.third-width{
+    width: 30%;
+    margin: 0 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.projects .project_1{
+    background-color: rgb(250, 206, 199);
+    transition: all 0.5s ease-in-out;
+}
+
+.projects .project_2{
+    background-color: #DEF7E5;
+    transition: all 0.5s ease-in-out;
+}
+
+.projects .project_3{
+    background-color: rgb(255, 254, 209);
+    transition: all 0.5s ease-in-out;
+}
+
+.projects .project_1:hover, .project_2:hover, .project_3:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 10px rgba(211, 211, 211, 0.658);
+}
+
+.projects img{
+    margin-bottom: 20px;
+}
+
+.projects h3{
+    margin-bottom: 20px;
+}
+
+.projects p{
+    margin-bottom: 20px;
+}
+
+/* Footer */
+
+footer{
+    text-align: center;
+}

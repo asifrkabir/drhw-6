@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Homework 6</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <div class="container_full nav-bg">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                    <p>Idea.tic</p>
+                </div>
+                <ul id="togglenav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <button onclick="mobilenav()">
+                    <div id="togglebar"> Menu </div>
+                </button>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Banner -->
+
+    <div class="container_full banner-area">
+        <div class="container">
+            <section class="banner">
+                <h1>It's time to amplify your<br><span class="orange-highlight">Online Business</span></h1>
+                <p>Build a beautiful and modern website with flexible Bootstrap components built from scratch.</p>
+                <img src="images/banner_img.png" alt="">
+            </section>
+        </div>
+    </div>
+
+    <!-- Project Text -->
+
+    <div class="container_full">
+        <div class="container">
+            <section class="project_text">
+                <div class="half-width right_justified">
+                    <h2 class="red-highlight">3k+</h2>
+                    <p>Our mission is to give developers some amazing possibilities to create high quality products with
+                        less time and money spent</p>
+                </div>
+                <div class="half-width left_justified">
+                    <h2>Successfully<br>completed<br>projects & ideas</h2>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Projects -->
+
+    <div class="container_full">
+        <div class="container">
+            <section class="projects">
+                <div class="third-width project_1">
+                    <img src="images/project1.png" alt="">
+                    <h3>Unleash your creative</h3>
+                    <p>Quick Website UI Kit contains components and pages that are easy to customize and change.</p>
+                </div>
+                <div class="third-width project_2">
+                    <img src="images/project2.png" alt="">
+                    <h3>Unleash your creative</h3>
+                    <p>Quick Website UI Kit contains components and pages that are easy to customize and change.</p>
+                </div>
+                <div class="third-width project_3">
+                    <img src="images/project3.png" alt="">
+                    <h3>Unleash your creative</h3>
+                    <p>Quick Website UI Kit contains components and pages that are easy to customize and change.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="container_full">
+        <div class="container">
+            <footer>
+                <p>All rights reserved &copy; <span class="orange-highlight">Asif Rezwan Kabir</span> | 2021</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        function mobilenav() {
+            var mobnav = document.getElementById('togglenav');
+            mobnav.classList.toggle("navactive");
+        }
+    </script>
+
+</body>
+
+</html>
