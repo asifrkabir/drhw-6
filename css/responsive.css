@@ -41,8 +41,12 @@
     px      68    160    252    344    436    528    620    712    */
 
      @media only screen and (min-width: 768px) and (max-width: 991px) {
-         .banner {
-             height: 80vh;
+         
+        .container{
+            width: 90%;
+        }
+        .banner {
+             height: 70vh;
          }
          .third-width {
              width: 60%;
@@ -62,8 +66,12 @@
     px      68    160    252    */
 
      @media only screen and (max-width: 767px) {
+
+        .container{
+            width: 90%;
+        }
          .banner {
-             height: 80vh;
+             height: 50vh;
          }
          .project_text {
              margin: 60px 0;
@@ -120,8 +128,12 @@
     px      68    160    252    344    436    */
 
      @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+        .container{
+            width: 90%;
+        }
          .banner {
-             height: 80vh;
+             height: 60vh;
          }
          .project_text {
              margin: 60px 0;
@@ -174,4 +186,57 @@
         device-pixel-ratio of 2+, such as iPhone 4.
     -----------------------------------------------    */
 
-     @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {}
+     @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+
+        .container{
+            width: 90%;
+        }
+         .banner {
+             height: 60vh;
+         }
+         .project_text {
+             margin: 60px 0;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+         }
+         .project_text .right_justified {
+             text-align: center;
+             margin: 0 20px;
+         }
+         .project_text .left_justified {
+             text-align: center;
+             margin: 40px 20px;
+         }
+         .project_text .half-width {
+             width: 50%;
+         }
+         .third-width {
+             width: 60%;
+             margin: 20px 20px;
+         }
+         .projects {
+             flex-direction: column;
+         }
+         nav {
+             display: flex;
+             justify-content: space-between;
+             padding: 15px 0;
+         }
+         nav ul {
+             display: none;
+         }
+         nav ul.navactive {
+             display: block;
+         }
+         nav ul.navactive li {
+             float: none;
+             border-right: none;
+             border-bottom: 1px solid #333;
+         }
+         nav button {
+             display: block;
+         }
+
+     }
